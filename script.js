@@ -15,7 +15,7 @@ async function dynamic() {
                 <img src="${element.image}" class=" h-1/2 mix-blend-multiply " alt="Image Of Product">
                 <div class="px-6 py-4 flex flex-col h-1/2">
                 <h1 class="font-bold text-lg md:text-xl mb-2">${element.title}</h1>
-                <p  style="display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 3; font-size: 16px; line-height: 1.4;">${element.description}</p>
+                <p   class="">${element.description.slice(0,100)}...</p>
                 
                 <div class="pt-4 pb-2 text-gray-700 mt-auto flex flex-col justify-center items-center  w-full gap-4">
                 
