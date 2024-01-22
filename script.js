@@ -11,11 +11,11 @@ async function dynamic() {
         if (data) {
             data.forEach(element => {
                 $('#main-container').append(`
-                <div class="flex flex-col items-center p-2 shadow-lg h-[600px] text-base md:text-md bg-teal-200 text-teal-80">
-                <img src="${element.image}" class="w-1/2 md:w-1/4 h-1/2 mix-blend-multiply" alt="Image Of Product">
+                <div class="flex flex-col items-center p-2 shadow-lg h-[600px] text-base md:text-md bg-green-300 text-blue-700 transform transition-all duration-300 hover:scale-105 rounded-xl hover:shadow-2xl hover:text-blue-800 hover-gradient">
+                <img src="${element.image}" class=" h-1/2 mix-blend-multiply " alt="Image Of Product">
                 <div class="px-6 py-4 flex flex-col h-1/2">
-                <h1 class="font-bold text-lg md:text-xl mb-2 text-stone-700">${element.title}</h1>
-                <p class="text-gray-700 overflow-hidden">${element.description}</p>
+                <h1 class="font-bold text-lg md:text-xl mb-2">${element.title}</h1>
+                <p  style="display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 3; font-size: 16px; line-height: 1.4;">${element.description}</p>
                 
                 <div class="pt-4 pb-2 text-gray-700 mt-auto flex flex-col justify-center items-center  w-full gap-4">
                 
